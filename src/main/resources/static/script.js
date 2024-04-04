@@ -1,12 +1,12 @@
 function regData(){
-    const biletter = {
+    const bilett = {
         film : $("#dropdown").val(),
         antall : $("#antall").val(),
         navn : $("#navn").val(),
         telefon : $("#telefon").val(),
         epost : $("#epost").val()
     };
-    $.post("/lagre", biletter, function (){
+    $.post("/lagre", bilett, function (){
         hentAlle();
     });
     $("#dropdown").val("");
